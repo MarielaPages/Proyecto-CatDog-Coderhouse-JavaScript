@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatDog - Frequently asked questions about our online pet shop</title>
+    <meta name="description" content="Tipical questions people ask about our online pet shop and their answers">
+    <meta name="author" content="mai.pages5@gmail.com">
+    <meta name="keywords" content="cat, dog, furniture, clothes, tree, bed, house, items, questions, answers, ">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css-boots/bootstrap.css">
+    <!--icofont CSS-->
+    <link rel="stylesheet" href="../icofont/icofont.min.css">
+    <!--Mi css-->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!--Acá va a ir un search, el canasto de compra y el tipo de moneda-->
+    <div class="blackBackground d-flex justify-content-between" id="firstBar">
+        <form action="nose.php" method="GET" class="ms-3 d-flex align-items-center">
+            <input type="text" name="search" placeholder=" search" class="borderRadius">
+            <select name="currency" class="borderRadius">
+                <option value="usd">USD</option>
+                <option value="ars">ARS</option>
+            </select>
+        </form>
+        <button type="button" class="me-5 cartButton">
+            <img src="../media/fotos/cart-icon.png" alt="cart icon" width="50">
+        </button>
+    </div>
+    <!--Botonera. La separo con lineas para diferenciarla del resto del contenido-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex flex-column">
+            <a id="logoHome" class="navbar-brand" href="../index.html">
+                <img src="../media/fotos/logo.png" alt="logo de CatDog" width="120">
+            </a>
+            <button class="navbar-toggler position-absolute top-25 end-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 boldLetters">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./forcats.html">For Cats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./fordogs.html">For Dogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./FAQ.html">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="d-flex justify-content-center">
+        <div class="text-center" id="headerFaq">
+            <h1>FAQs</h1>
+        </div>
+    </header>
+    <section id="faqs">
+        <div class="accordion w-75 mx-auto mb-4" id="accordionExample">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Is this page only for animals?
+                    </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><strong>Yes!</strong> This page was created exclusively for cats and dogs. All toys, trees, houses and clothes are made for them.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How do I buy here?
+                    </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><strong>Just click on the picture.</strong> You only need to look for your perfect item in the Cat or Dog section and click on the picture.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Can I buy more than one item in the same purchase?
+                    </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><strong>Absolutely!</strong> You can click on all the items you like and they will accumulate in a cart. Then you can visit your cart, make a decision and buy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img src="../media/fotos/logo.png" alt="logo de CatDog" width="120">
+        <div>
+            <p class="pt-3">Social Media</p>
+            <ul>
+                <li>
+                    <a href="https://facebook.com">
+                        <i class="icofont-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com">
+                        <i class="icofont-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com">
+                        <i class="icofont-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="pt-3">&copy All Rights Reserved</p>
+        </div>
+    </footer>
+    <!--Bootstrap Bundle with Popper-->
+    <script src="../js-boots/bootstrap.bundle.min.js"></script>
+</body>

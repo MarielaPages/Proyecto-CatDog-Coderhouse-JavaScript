@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatDog - about us section from our online petshop</title>
+    <meta name="description" content="Section where you can learn more about our online pet shop, our goals and beliefs">
+    <meta name="author" content="mai.pages5@gmail.com">
+    <meta name="keywords" content="cat, dog, style, furniture, clothes, trendy, cute, tree, bed, house, home, mission, beliefs, adopt">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css-boots/bootstrap.css">
+    <!--icofont CSS-->
+    <link rel="stylesheet" href="../icofont/icofont.min.css">
+    <!--Mi css-->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!--Acá va a ir un search, el canasto de compra y el tipo de moneda-->
+    <div class="blackBackground d-flex justify-content-between" id="firstBar">
+        <form action="nose.php" method="GET" class="ms-3 d-flex align-items-center">
+            <input type="text" name="search" placeholder=" search" class="borderRadius">
+            <select name="currency" class="borderRadius">
+                <option value="usd">USD</option>
+                <option value="ars">ARS</option>
+            </select>
+        </form>
+        <button type="button" class="me-5 cartButton">
+            <img src="../media/fotos/cart-icon.png" alt="cart icon" width="50">
+        </button>
+    </div>
+    <!--Botonera. La separo con lineas para diferenciarla del resto del contenido--> 
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex flex-column">
+            <a id="logoHome" class="navbar-brand" href="../index.html">
+                <img src="../media/fotos/logo.png" alt="logo de CatDog" width="120">
+            </a>
+            <button class="navbar-toggler position-absolute top-25 end-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 boldLetters">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./forcats.html">For Cats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./fordogs.html">For Dogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./FAQ.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contactus.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    <!--Sección que introduce información sobre la compañía-->
+    <section class="clearBoth sectionAboutUs">
+        <article class="articleAboutUs">
+            <div class="articleAboutUs__content">
+                <h1>About Us</h1>
+                <p>Inspired by cat and dog lovers, CatDog decided to build a company that can provide you with the best ideas for your pets.</p>
+                <p>The best part is that we have already selected between the last trends, so you just have to scroll and get amazed.</p><br>
+                <h2>What we believe</h2>
+                <p>Here at CatDog, we believe that every cat and dog deserve a forever home, and our mission is to help these amazing animals in any way we can. To give back to them, we try to make everyone aware about the fact that they can always adopt. To make this possible, we donate essential supplies to communities that care about them and put them in adoption. </p>
+            </div>
+            <div class="articleAboutUs__img">
+                <img src="../media/fotos/-703-700x500-0.jpg" alt="Cats and dogs side to side" class="animate__animated animate__backInRight borderRadius">
+            </div>
+        </article>
+    </section>
+    <!--pie de página con logos de redes sociales-->
+    <footer>
+        <img src="../media/fotos/logo.png" alt="logo de CatDog" width="120">
+        <div>
+            <p class="pt-3">Social Media</p>
+            <ul>
+                <li>
+                    <a href="https://facebook.com">
+                        <i class="icofont-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com">
+                        <i class="icofont-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com">
+                        <i class="icofont-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="pt-3">&copy All Rights Reserved</p>
+        </div>
+    </footer>
+    <!--Bootstrap Bundle with Popper-->
+    <script src="../js-boots/bootstrap.bundle.min.js"></script>
+</body>
+</html>

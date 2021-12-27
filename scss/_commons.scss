@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+}
+$bg-lightBeige: rgb(247, 244, 240);
+$bg-black: black;
+$bg-darkSalmon: darksalmon;
+$bg-mustard: rgb(243, 234, 200);
+$bg-white: white;
+
+@mixin m($mt, $mr, $mb, $ml){
+    margin-top: $mt;
+    margin-right: $mr;
+    margin-bottom: $mb;
+    margin-left: $ml;
+}

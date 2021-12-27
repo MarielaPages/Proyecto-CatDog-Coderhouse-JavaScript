@@ -1,0 +1,53 @@
+@media only screen and (min-width:680px){
+    nav ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        height: 150px;
+        padding-top: 0rem;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .headerHome__video{
+        width: 40rem;
+    }
+    .articleHome__img{
+        width: 25rem;
+    }
+    .articleAboutUs__img img{
+        width: 25rem;
+        margin-left: 0rem;
+    }
+    .headerProd img {
+        width:67%;
+        object-fit:unset; }
+    .picturesSection__img{
+        width:350px;
+    }
+    #form{
+        padding-right:1rem;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    #logoHome{
+        padding-bottom: 1rem;
+      }
+    nav ul li{
+        list-style-type: none;
+        @include m(10px,20px,10px,20px)
+    }
+    .headerHome__video{
+        width: 65rem;
+    }
+    .articleHome__img{
+        width: 30rem;
+    }
+    .sectionForm{
+        display:flex;
+        justify-content: space-around;
+    }
+}

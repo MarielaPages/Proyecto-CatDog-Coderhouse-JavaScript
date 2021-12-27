@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatDog - 404 error page of our online pet shop</title>
+    <meta name="author" content="mai.pages5@gmail.com">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css-boots/bootstrap.css">
+    <!--Animate.css-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Mi css-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--Style for the 404 page-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+        body {
+            background-color: rgb(247, 244, 240);
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+        }
+        h1{
+            color: darksalmon;
+            font-size: 1.7rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .textCenter{
+            text-align: center;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .btn-secondary{
+            background-color: rgb(167, 167, 167);
+        }
+        .justify-content-center{
+            justify-content: center;
+        }
+        #header404 h1{
+            font-size:3rem;
+            margin-top: 2rem;
+        }
+        #header404 p{
+            font-size: 1.5rem;
+            font-weight:bold;
+        }
+        #button404 a{
+            text-decoration: none;
+            font-weight: bold;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <header class="textCenter" id="header404">
+        <h1>Oops! 404</h1>
+        <p>Your page wasn't found!</p>
+    </header>
+    <div class="d-flex justify-content-center">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_syqnfe7c.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn-sm btn-secondary" id="button404">
+            <a href="/">Go back to home</a>
+        </button>
+    </div>
+    <script src="./js-boots/bootstrap.bundle.min.js"></script>
+</body>
+</html>

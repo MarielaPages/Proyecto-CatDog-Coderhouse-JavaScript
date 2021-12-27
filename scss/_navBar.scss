@@ -1,0 +1,16 @@
+/*NavBar*/
+nav{
+    overflow:auto;
+    background-color: $bg-lightBeige;
+    ul{
+        border-top: groove;
+        border-bottom: groove;
+    }
+    li{
+        list-style-type: none;
+    }
+}
+.navbar-brand{
+    margin: auto;
+}
+/*end NavBar*/

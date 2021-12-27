@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatDog - dog section from our online petshop</title>
+    <meta name="description" content="section where you can find trendy clothes, toys and furniture for your dog. Our new selection will be on the top.">
+    <meta name="author" content="mai.pages5@gmail.com">
+    <meta name="keywords" content="dog, style, furniture, clothes, trendy, cute, house, bed, toy">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css-boots/bootstrap.css">
+    <!--Css llightbox-->
+    <link rel="stylesheet" href="../css-lb/lightbox.css">
+    <!--icofont CSS-->
+    <link rel="stylesheet" href="../icofont/icofont.min.css">
+    <!--Mi css-->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!--Acá va a ir un search, el canasto de compra y el tipo de moneda-->
+    <div class="blackBackground d-flex justify-content-between" id="firstBar">
+        <form action="nose.php" method="GET" class="ms-3 d-flex align-items-center">
+            <input type="text" name="search" placeholder=" search" class="borderRadius">
+            <select name="currency" class="borderRadius">
+                <option value="usd">USD</option>
+                <option value="ars">ARS</option>
+            </select>
+        </form>
+        <button type="button" class="me-5 cartButton d-flex align-items-center">
+            <img src="../media/fotos/cart-icon.png" alt="cart icon" width="50">
+            <div id="contadorCarritoDogs" class="cartCounter"></div>
+        </button>
+    </div>
+    <!--Botonera. La separo con lineas para diferenciarla del resto del contenido-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex flex-column">
+            <a id="logoHome" class="navbar-brand" href="../index.html">
+                <img src="../media/fotos/logo.png" alt="logo de CatDog" width="120">
+            </a>
+            <button class="navbar-toggler position-absolute top-25 end-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 boldLetters">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./forcats.html">For Cats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./fordogs.html">For Dogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./FAQ.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contactus.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    <!--Encabezado para introducir la sección de productos para perros-->
+    <header class="headerProd">
+        <img src="../media/fotos/dog-cover-page.jpg" alt="Dog in yellow tree landscape" width="65%" class="marginBottomStandard borderRadius">
+    </header>
+    <!--Sección con imagenes de los productos para perros-->
+    <section> 
+        <h1 class="textCenter">Our Products</h1>
+        <div class="picturesSection" id="contenedorProductos"></div>
+        <div class="prodButtonContainer">
+            <button class="borderRadius prodButton" id="moreDogProducts">More products</button>
+        </div>
+        <div id="carritoVisible"></div>
+    </section>
+    <section id="carritoDogs"></section>
+    <!--pie de página con logos de redes sociales-->
+    <footer>
+        <img src="../media/fotos/logo.png" alt="logo de CatDog" width="120">
+        <div>
+            <p class="pt-3">Social Media</p>
+            <ul>
+                <li>
+                    <a href="https://facebook.com">
+                        <i class="icofont-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com">
+                        <i class="icofont-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com">
+                        <i class="icofont-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="pt-3">&copy All Rights Reserved</p>
+        </div>
+    </footer>
+    <!--Bootstrap Bundle with Popper-->
+    <script src="../js-boots/bootstrap.bundle.min.js"></script>  
+    <!--Lightbox script-->
+    <script src="../js-lb/lightbox-plus-jquery.js"></script>
+    <!--Mi js-->
+    <script src="../js/forDogs.js"></script>
+</body>
+</html>

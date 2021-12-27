@@ -1,0 +1,301 @@
+body{
+    background-color: $bg-lightBeige;
+    font-family: $fontMain;
+    font-size:$standardFontSize
+}
+h1{
+    color: $bg-darkSalmon;
+    font-size: $fontTitle;
+    font-weight: $fontBold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+h2{
+    @extend h1;
+    font-size:$fontTitle - 0.3rem;
+}
+h3{
+    @extend h1;
+    font-size: $fontTitle - 1rem;
+    margin-left: 1rem;
+}
+.blackBackground{
+    background-color: $bg-black;
+}
+.boldLetters{
+    font-weight: $fontBold;
+}
+.lightLetters{
+    font-weight: $fontThin;
+}
+.textCenter{
+    text-align: center;
+}
+.fontBig{
+    font-size: 2rem;
+}
+.marginLeft1Rem{
+    margin-left: 1rem;
+}
+#firstBar{
+    padding:0.5rem;
+}
+
+/*First search bar*/
+.cartButton{
+    background-color: black;
+    border: none;
+}
+.cartCounter{
+    color: white;
+    background-color: grey;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    margin-left: 0.3rem;
+}
+/*End first search bar*/
+
+/*Home*/
+.headerHome{
+    display:flex;
+    justify-content: center;
+    padding-top: 2rem;
+    &__video{
+        width: 25rem;
+    }
+}
+.articleHome{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    p{
+        font-size: 1.2rem;
+        font-weight:bold;
+    }
+    &__img{
+        width: 20rem;
+    }
+}
+.sectionHome div{
+    padding-top: 2rem;
+}
+#logoHome{
+    display: flex;
+    justify-content: center;
+    margin-top:1rem;
+}
+.carrito{
+    width: 80%;
+    background-color: antiquewhite;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.contenedorProductosComprados{
+    display: flex;
+    justify-content: space-between;
+}
+.cartImage{
+    width: 100px;
+}
+.totalContainer{
+    background-color:burlywood;
+    margin: auto;
+    width: 30%;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    
+}
+.productoPropiedad{
+    font-weight: bold;
+}
+#deleteButton{
+    display: flex;
+    align-items: center;
+}
+#almostThereDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-weight: bold;
+    }
+}
+#formForDelivery{
+    padding-top: 0rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#formForDelivery2{
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+}
+.formForDeliveryOptions{
+    border-radius: 0.3rem;
+}
+.alignOptions{
+    display: flex;
+    flex-direction: column;
+}
+#tituloHomeForm{
+    font-size: 1.5rem;
+}
+/*end Home*/
+
+/*About Us*/
+.sectionAboutUs{
+    display: flex;
+    justify-content:center;
+}
+.articleAboutUs{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    &__content{
+        p{
+            font-weight: $fontBold;
+        }
+    }
+    &__img{
+        margin-top: 2rem;
+        & img{
+            width: 16rem;
+        }
+    }
+}
+/*end About Us*/
+
+/*Cats and Dogs Sections*/
+.picturesSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    &__img{
+        width: 300px;
+    }
+}
+.headerProd{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    img{
+        width:90%;
+        object-fit: cover;
+    }
+}
+.marginBottomStandard{
+    margin-bottom: 1rem;
+}
+.scaleImage:hover{
+    transform:scale(1.05);
+    cursor:pointer;
+    transition:all .4s;
+}
+.prodBack{
+    background-color: $bg-white;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    font-weight: 2*$fontThin;
+    color:$bg-darkSalmon;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.bigProdLetters{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.borderRadius{
+    border-radius: 0.3rem;
+}
+.prodButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+.prodButton{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-weight: bold;
+    background-color: rgb(218, 214, 214);
+    margin-bottom: 1rem;
+}
+/*end Cats and Dogs Sections*/
+
+/*FAQs Section*/
+.accordion-button:not(.collapsed){
+    color: black;
+    background-color: rgb(248, 242, 221);
+}
+#headerFaq{
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#faqs h3{
+    font-weight: $fontBold;
+    font-size: 1.5rem;
+}
+/*end FAQs Section*/
+
+/*Form Section*/
+.sectionForm{
+    padding: 2rem;
+    background-image: url(../media/fotos/cat-dog-background.jpg);
+    width:90%;
+    margin:auto;
+    margin-bottom:2rem;
+    div{
+        display: flex;
+        justify-content: center;
+    }
+    &__map{
+        border:groove;
+    }
+}
+.map{
+    width: 30rem;
+}
+#form{
+    @include m(2rem,0rem,2rem,0rem);
+    padding:1rem;
+    border-style:ridge;
+    border-radius: 0.5rem;
+    background-color:rgba(240, 201, 188, 0.582);
+    width: 30rem;
+}
+#sumbitButton{
+    width: 5rem;
+}
+/*end Form Section*/
+
+/*404 page*/
+#header404{
+    h1{
+        font-size:3rem;
+        margin-top: 2rem
+    }
+    p{
+        font-size: 1.5rem;
+        font-weight:bold;
+    }
+}
+#button404 a{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+.btn-secondary{
+    background-color: rgb(167, 167, 167);
+}
+/*end 404 page*/

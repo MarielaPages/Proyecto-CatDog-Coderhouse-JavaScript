@@ -1,0 +1,36 @@
+/*Footer*/
+footer{
+    background-color: $bg-mustard;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    ul{
+        display: flex;
+        justify-content:center;
+        margin-bottom: 0;
+        padding:0;
+    }
+    li{
+        list-style-type: none;
+        margin: 5px;
+    }
+    a{
+        text-decoration: none;
+    }
+    p{
+        text-align: center;
+        font-weight: bold;
+    }
+    i{
+        font-size: 1.6rem;
+        color:black;
+        background-color: $bg-mustard;
+    }
+}
+.icofont-facebook{
+    color:$bg-mustard;
+    background-color: black;
+}
+/*end Footer*/

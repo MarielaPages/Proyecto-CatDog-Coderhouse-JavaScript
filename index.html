@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatDog - online pet shop</title>
+    <meta name="description" content="pet shop where you can buy trendy clothes and furniture for your cat or dog. Here you will have access to all our old and new products">
+    <meta name="author" content="mai.pages5@gmail.com">
+    <meta name="keywords" content="cat, dog, style, furniture, clothes, trendy, cute, tree, bed, house">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css-boots/bootstrap.css">
+    <!--Css llightbox-->
+    <link rel="stylesheet" href="./css-lb/lightbox.css">
+    <!--icofont CSS-->
+    <link rel="stylesheet" href="./icofont/icofont.min.css">
+    <!--Mi css-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!--Acá va a ir un search, el canasto de compra y el tipo de moneda-->
+    <div class="blackBackground d-flex justify-content-between" id="firstBar">
+        <form action="nose.php" method="GET" class="ms-3 d-flex align-items-center">
+            <input type="text" name="search" placeholder=" search" class="borderRadius me-1">
+            <select name="currency" class="borderRadius">
+                <option value="usd">USD</option>
+                <option value="ars">ARS</option>
+            </select>
+        </form>
+        <button type="button" class="me-5 cartButton d-flex align-items-center">
+            <img src="./media/fotos/cart-icon.png" alt="cart icon" width="50">
+        </button>
+    </div>
+    <!--Botonera. La separo con lineas para diferenciarla del resto del contenido-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex flex-column">
+            <div>
+                <a id="logoHome" class="navbar-brand" href="./index.html">
+                    <img src="media/fotos/logo.png" alt="logo de CatDog" width="120">
+                </a>
+            </div>
+            <button class="navbar-toggler position-absolute top-25 end-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 boldLetters">
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./secciones/forcats.html">For Cats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/fordogs.html">For Dogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/FAQ.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/contactus.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    <!--Encabezado de la pagina con video de presentación-->
+    <header class="headerHome">
+        <video src="./media/videos/catfurniture.mp4" autoplay muted loop preload="auto" width=1200 class="borderRadius headerHome__video"></video>
+    </header>
+    <!--Sección principal del home-->
+    <section class="sectionHome">
+        <div class="d-flex justify-content-center">
+            <article class="articleHome">
+                <h1 class="textCenter articleHome__heading">Hi, we are CatDog!</h1>
+                <p class="textCenter">Here we love joy, style and design, so if you are looking for your pet to be comfortable and have fun while your house looks great, you are in the right place! </p>
+                <p class="textCenter">We offer you a wide range of pet furniture and toys, and also some trendy pet clothing. Feel free to take a look and choose what suits your pet.</p>
+            </article>
+        </div>
+        <div class="picturesSection" id="contenedorProductos"></div>
+        <div id="carritoVisible"></div>  
+    </section>
+    <section id="carrito"></section>
+    <!--pie de página con logos de redes sociales-->
+    <footer>
+        <img src="media/fotos/logo.png" alt="logo de CatDog" width="120">
+        <div>
+            <p class="pt-3">Social Media</p>
+            <ul>
+                <li>
+                    <a href="https://facebook.com">
+                        <i class="icofont-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com">
+                        <i class="icofont-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com">
+                        <i class="icofont-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="pt-3">&copy All Rights Reserved</p>
+        </div>
+    </footer>
+    <!--Bootstrap Bundle with Popper-->
+    <script src="./js-boots/bootstrap.bundle.min.js"></script>
+    <!--Lightbox script-->
+    <script src="./js-lb/lightbox-plus-jquery.js"></script>
+    <!--jQuery-->
+    <script src="./jQuery/jquery-3.6.0.min.js"></script>
+    <!--Mi js-->
+    <script src="./js/main.js"></script>
+</body>
+</html>
